@@ -1,0 +1,7 @@
+INDEX VERSION 1.126+/home/admin/github/Java-code-examples/.metadata/.plugins/org.eclipse.jdt.core
+93200534.index
+48489615.index
+3974989219.index
+1921585152.index
+2615850293.index
+2626122028.index
