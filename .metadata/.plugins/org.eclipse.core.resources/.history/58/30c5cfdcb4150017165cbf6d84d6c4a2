@@ -1,0 +1,45 @@
+package principal;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String line = "";
+		boolean validOpt = false;
+		while(!validOpt){
+			
+			System.out.print("Para realizar una venta digite: V \n" +
+					"Para ingresar una compra digite: C \n" +
+					"Para visualizar la utilidad del día digite: U");
+			
+			BufferedReader bufferReader = new BufferedReader(new InputStreamReader(System.in));
+			
+			try {
+				line = bufferReader.readLine().toLowerCase();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			switch (line) {
+			case "v":
+				System.out.println("venta");
+				validOpt = true;
+				break;
+			case "c":
+				System.out.println("compra");
+				validOpt = true;
+				break;
+			case "u":
+				System.out.println("La utilidad del día es:");
+				validOpt = true;
+			default :
+				System.out.println("no digitó una opción válida");
+				break;
+			}
+		}
+	}
+}

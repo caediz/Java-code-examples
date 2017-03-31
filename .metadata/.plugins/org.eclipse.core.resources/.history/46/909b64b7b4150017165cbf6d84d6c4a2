@@ -1,0 +1,13 @@
+package principal;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.print("Para realizar una venta digite: V \n" +
+				"Para ingresar una compra digite C \n" +
+				"Para visualizar la utilidad del día digite U");
+	}
+}
